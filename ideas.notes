@@ -1,0 +1,6 @@
+# Install Notes Extension: canadaduane.notes
+* Backend *
+[√] Each question should have a Status {Active : "The Question is currently being Shown", Inactive: "The Question is currently Hidden", Answered, Incorrect}
+[ ] The Status will be updated for later use when the user Presses QUIT and for the Session will be handled by the frontend
+[√] Each topic and subtopic should have a Status also to Indicate the completion of that topic / subtopic
+[ ] 
