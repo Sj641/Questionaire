@@ -1,0 +1,29 @@
+{
+    "topics": [
+        {
+            "id": 1,
+            "name": "Java",
+            "status": false
+        },
+        {
+            "id": 2,
+            "name": "Python",
+            "status": false
+        },
+        {
+            "id": 3,
+            "name": "C",
+            "status": false
+        },
+        {
+            "id": 4,
+            "name": "C++",
+            "status": false
+        },
+        {
+            "id": 5,
+            "name": "JavaScript",
+            "status": false
+        }
+    ]
+}

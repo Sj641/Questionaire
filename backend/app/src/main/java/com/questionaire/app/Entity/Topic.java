@@ -4,6 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.List;
 import lombok.Data;
+
 /**
  * This is the base Entity
  * From here the Hierarchy Starts
@@ -13,11 +14,13 @@ import lombok.Data;
 
 @Data
 @Document(collection = "topics")
-public class Topics {
+public class Topic {
     @Id
     private String id;
     private String name;
-    private Boolean status;
-    private Integer subtopicSize;
-    private List<Subtopic> subtopics;
+    private Boolean status; // Indicates completion of questions under this topic
+    private Integer subtopicsSize; // Size of Subtopics for efficiency
+    private List<Topic> subtopics; // Subtopics are nested within topics
+    private Integer questionSize; // Total number of questions under this topic
+    private List<Question> questions;
 }

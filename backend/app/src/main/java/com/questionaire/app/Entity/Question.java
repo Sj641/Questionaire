@@ -17,7 +17,7 @@ import lombok.Data;
  */
 
 @Data
-@Document(collection = "questions")
+@Document(collection = "question")
 public class Question {
     @Id
     private String id;
@@ -28,6 +28,4 @@ public class Question {
     private String correctOption;
     @DBRef
     private Topic topic; // Reference to parent topic
-    @DBRef
-    private Subtopic subtopic; // Reference to parent subtopic
 }
